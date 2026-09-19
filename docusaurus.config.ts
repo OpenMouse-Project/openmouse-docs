@@ -15,7 +15,7 @@ const config: Config = {
   baseUrl: '/',
 
   organizationName: 'OpenMouse-Project',
-  projectName: 'openmouse',
+  projectName: 'openmouse-docs',
 
   onBrokenLinks: 'throw',
 
@@ -32,7 +32,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           routeBasePath: '/', // docs at site root, no separate landing page needed
           editUrl:
-            'https://github.com/OpenMouse-Project/openmouse/tree/docs/',
+            'https://github.com/OpenMouse-Project/openmouse-docs/tree/main/',
         },
         blog: false,
         theme: {
@@ -61,6 +61,11 @@ const config: Config = {
           label: 'Guide',
         },
         {
+          href: 'https://openmouse.app',
+          label: 'OpenMouse',
+          position: 'right',
+        },
+        {
           href: 'https://github.com/OpenMouse-Project',
           label: 'GitHub',
           position: 'right',
@@ -69,22 +74,41 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
+      logo: {
+        alt: 'OpenMouse Logo',
+        src: 'img/logo.png',
+        href: 'https://openmouse.app',
+      },
       links: [
         {
           title: 'Guide',
           items: [
             {label: 'Architecture', to: '/architecture'},
             {label: 'Add a Device', to: '/add-a-device/overview'},
+            {label: 'Supported Devices', to: '/supported-devices'},
           ],
         },
         {
           title: 'Community',
           items: [
             {label: 'GitHub', href: 'https://github.com/OpenMouse-Project'},
+            {label: 'Discord', href: 'https://discord.gg/yxC9jzMdw6'},
+            {label: 'X / Twitter', href: 'https://x.com/openmouseapp'},
+          ],
+        },
+        {
+          title: 'Legal',
+          items: [
+            {label: 'Privacy Policy', href: 'https://openmouse.app/privacy.html'},
+            {label: 'Terms of Service', href: 'https://openmouse.app/terms.html'},
+            {
+              label: 'License (AGPL-3.0)',
+              href: 'https://github.com/OpenMouse-Project/openmouse-docs/blob/main/LICENSE',
+            },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} OpenMouse. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} OpenMouse Project. All rights reserved.`,
     },
     prism: {
       theme: prismThemes.github,

@@ -2,8 +2,6 @@
 
 Documentation site for the OpenMouse Project, built with [Docusaurus](https://docusaurus.io/). Deployed at [docs.openmouse.app](https://docs.openmouse.app).
 
-Lives on the **`docs` branch** of the [`openmouse`](https://github.com/OpenMouse-Project/openmouse) repo — not a separate repo — so it stays next to the code it documents.
-
 Covers the app's architecture and, most importantly, how to add support for a new mouse — reverse-engineering conventions, writing a driver, and getting it registered and verified.
 
 ## Local development
@@ -19,13 +17,14 @@ npm run start
 npm run build
 ```
 
-Generates static content into `build/`.
+Generates static content into `build/`. Run `npm run typecheck` for a TypeScript pass over the config and `src/` files.
 
 ## Related
 
-- **[openmouse](https://github.com/OpenMouse-Project/openmouse)** (`control-panel` branch) — the app these docs are for.
+- **[openmouse](https://github.com/OpenMouse-Project/openmouse)** — the Preact/Vite web control panel these docs are for.
+- **[openmouse-landing-page](https://github.com/OpenMouse-Project/openmouse-landing-page)** — the marketing site at [openmouse.app](https://openmouse.app).
 - **[mouse-protocol](https://github.com/OpenMouse-Project/mouse-protocol)** — the packet codecs and WebHID drivers these docs explain how to write.
 
 ## License
 
-[GNU AGPL-3.0](https://github.com/OpenMouse-Project/openmouse/blob/main/LICENSE), same as the rest of the project.
+[GNU AGPL-3.0](https://github.com/OpenMouse-Project/openmouse-docs/blob/main/LICENSE), same as the rest of the project.
