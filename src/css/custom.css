@@ -326,12 +326,9 @@ code {
 }
 
 .footer__logo {
-  margin-bottom: 1rem;
+  height: 40px;
+  width: auto;
   filter: drop-shadow(0 0 12px rgba(105, 210, 141, 0.4));
-}
-
-.footer__logo img {
-  max-height: 44px;
 }
 
 .footer__title {
@@ -353,7 +350,7 @@ code {
 }
 
 .footer__bottom {
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   padding-top: 1.2rem;
   border-top: 1px solid rgba(255, 255, 255, 0.07);
   font-size: 0.82rem;
