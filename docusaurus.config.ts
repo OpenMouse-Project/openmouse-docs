@@ -74,41 +74,10 @@ const config: Config = {
     },
     footer: {
       style: 'dark',
-      logo: {
-        alt: 'OpenMouse Logo',
-        src: 'img/logo.png',
-        href: 'https://openmouse.app',
-      },
-      links: [
-        {
-          title: 'Guide',
-          items: [
-            {label: 'Architecture', to: '/architecture'},
-            {label: 'Add a Device', to: '/add-a-device/overview'},
-            {label: 'Supported Devices', to: '/supported-devices'},
-          ],
-        },
-        {
-          title: 'Community',
-          items: [
-            {label: 'GitHub', href: 'https://github.com/OpenMouse-Project'},
-            {label: 'Discord', href: 'https://discord.gg/yxC9jzMdw6'},
-            {label: 'X / Twitter', href: 'https://x.com/openmouseapp'},
-          ],
-        },
-        {
-          title: 'Legal',
-          items: [
-            {label: 'Privacy Policy', href: 'https://openmouse.app/privacy.html'},
-            {label: 'Terms of Service', href: 'https://openmouse.app/terms.html'},
-            {
-              label: 'License (AGPL-3.0)',
-              href: 'https://github.com/OpenMouse-Project/openmouse-docs/blob/main/LICENSE',
-            },
-          ],
-        },
-      ],
-      copyright: `Copyright © ${new Date().getFullYear()} OpenMouse Project. All rights reserved.`,
+      copyright:
+        `Copyright © ${new Date().getFullYear()} OpenMouse Project. All rights reserved.<br/>` +
+        '<a href="https://github.com/OpenMouse-Project/openmouse-docs/blob/main/LICENSE">' +
+        'GNU Affero General Public License v3.0 (AGPL-3.0)</a>',
     },
     prism: {
       theme: prismThemes.github,

@@ -325,39 +325,21 @@ code {
   color: #9fb0b4;
 }
 
-.footer__logo {
-  height: 40px;
-  width: auto;
-  filter: drop-shadow(0 0 12px rgba(105, 210, 141, 0.4));
-}
-
-.footer__title {
-  color: #7ade9d;
-  font-family: var(--ifm-font-family-monospace);
-  font-size: 0.75rem;
-  font-weight: 500;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-}
-
-.footer__link-item {
-  transition: color 0.15s ease;
-}
-
-.footer__link-item:hover {
-  color: var(--om-mint-bright);
-  text-decoration: none;
-}
-
 .footer__bottom {
-  margin-top: 1.5rem;
-  padding-top: 1.2rem;
-  border-top: 1px solid rgba(255, 255, 255, 0.07);
   font-size: 0.82rem;
 }
 
 .footer__copyright {
+  line-height: 1.9;
   opacity: 0.8;
+}
+
+.footer__copyright a {
+  color: var(--om-mint-bright);
+}
+
+.footer__copyright a:hover {
+  color: #bdf3d2;
 }
 
 /* ── Misc components ───────────────────────────────────────────────────── */
